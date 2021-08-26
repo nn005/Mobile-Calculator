@@ -106,12 +106,13 @@ body {
         min-height: 100vh;
         grid-template-columns: repeat(4,72px);
         grid-template-rows: minmax(84px,auto) repeat(5,72px);
+        text-align: center;
     
     }
     
     .calculator-grid > button{
         cursor: pointer;
-        font-size: 2rem;
+        font-size: 1rem;
         border: 1px solid white;
         background-color: rgba(255, 255, 255, 0.75)
     }
