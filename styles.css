@@ -105,7 +105,6 @@ body {
         align-content: center;
         min-height: 100vh;
         grid-template-columns: repeat(4,72px);
-        grid-template-columns: auto auto;
         grid-template-rows: minmax(84px,auto) repeat(5,72px);
     
     }
