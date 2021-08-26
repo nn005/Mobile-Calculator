@@ -85,3 +85,88 @@ body {
 .sci-grid > button:hover {
     background-color: rgba(255, 255, 255, 0.95);
 }
+
+@media screen and (max-width: 800px) {
+    *, *::before, *::after {
+        box-sizing: border-box;
+        font-family: futura;
+        font-weight: normal;
+    }
+    
+    body {
+        padding: 0;
+        margin: 0;
+        background: linear-gradient(to right, lightblue, lightgreen);
+    }
+    
+    .calculator-grid{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        min-height: 100vh;
+        grid-template-columns: repeat(4,72px);
+        grid-template-rows: minmax(84px,auto) repeat(5,72px);
+    
+    }
+    
+    .calculator-grid > button{
+        cursor: pointer;
+        font-size: 2rem;
+        border: 1px solid white;
+        background-color: rgba(255, 255, 255, 0.75)
+    }
+    
+    .calculator-grid > button:hover {
+        background-color: rgba(255, 255, 255, 0.95);
+    }
+    
+    .span-two {
+        grid-column: span 2;
+    }
+    
+    #back {
+        background-color: lightcyan;
+    }
+    
+    #back:hover{
+        background-color: rgba(255, 255, 255, 0.95); 
+    }
+    
+    .output{
+        grid-column: 1/-1;
+        background-color:rgba( 0, 0, 0, 0.75);
+        padding: 30px;
+    }
+    
+    .calculator-screen {
+        background-color:rgba( 0, 0, 0, 0);
+        color: rgba(255, 255, 255, 0.75);
+        text-align: left;
+        font-size: 1.5rem;
+        border: none;
+    }
+    
+    .sci-grid {
+
+        display: none;
+        justify-content: right;
+        align-content: baseline;
+        min-height: 20vh;
+        grid-template-columns: repeat(4,72px);
+        grid-template-rows: minmax(84px,auto) repeat(5,72px);
+        
+    }
+    
+    .sci-grid > button{
+        cursor: pointer;
+        font-size: 2rem;
+        border: 1px solid white;
+        background-color: lightblue;
+    
+    }
+    
+    .sci-grid > button:hover {
+        background-color: rgba(255, 255, 255, 0.95);
+    } 
+
+  }
