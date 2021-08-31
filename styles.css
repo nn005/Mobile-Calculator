@@ -7,7 +7,8 @@
 body {
     padding: 0;
     margin: 0;
-    background: linear-gradient(to right, lightblue, lightgreen);
+    /*background: linear-gradient(to right, lightblue, lightgreen);*/
+    background: grey;
 }
 
 .calculator-grid{
@@ -23,8 +24,10 @@ body {
 .calculator-grid > button{
     cursor: pointer;
     font-size: 2rem;
-    border: 1px solid white;
-    background-color: rgba(255, 255, 255, 0.75)
+    border: none;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 10px;
+
 }
 
 .calculator-grid > button:hover {
@@ -36,23 +39,19 @@ body {
 }
 
 #back {
-    background-color: lightcyan;
+    background-color: darkorange;
+    border-radius: 10px;
 }
 
 #back:hover{
-    background-color: rgba(255, 255, 255, 0.95); 
+    background-color: #fed8b1; 
 }
 
 .output{
     grid-column: 1/-1;
     background-color:rgba( 0, 0, 0, 0.75);
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    flex-direction: column;
-    padding: 10px;
-    word-wrap: break-word;
-    word-break: break-all;
+    padding: 50px;
+    border-radius: 10px;
 }
 
 .calculator-screen {
@@ -77,13 +76,15 @@ body {
 .sci-grid > button{
     cursor: pointer;
     font-size: 2rem;
-    border: 1px solid white;
-    background-color: lightblue;
+    color: white;
+    border: none;
+    background-color: #222222;
+    border-radius: 10%;
 
 }
 
 .sci-grid > button:hover {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 @media screen and (max-width: 800px) {
@@ -112,7 +113,7 @@ body {
     
     .calculator-grid > button{
         cursor: pointer;
-        font-size: 1.5rem;
+        font-size: 1rem;
         border: 1px solid white;
         background-color: rgba(255, 255, 255, 0.75)
     }
